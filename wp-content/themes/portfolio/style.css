@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
-  background-color: #333;
+  background-color: #f3f4f6;
 }
 
 p {
@@ -58,7 +58,7 @@ header {
 }
 
 .navbar .main-menu li a:active {
-  color: #ac925a;
+  color: #3b82f6;
 }
 
 .page-wrap {
@@ -106,7 +106,7 @@ button {
 
 .buttons .portfolio-btn {
   background-color: #fff;
-  color: #2d2f31;
+  color: #3b82f6;
 }
 
 .buttons .portfolio-btn:hover {
@@ -116,11 +116,11 @@ button {
 }
 
 .buttons .hire-btn {
-  background-color: #ac925a;
+  background-color: #3b82f6;
   color: #fff;
 }
 
 .buttons .hire-btn:hover {
-  background-color: rgba(172, 146, 90, 0.8);
+  background-color: rgba(59, 130, 255, 0.8);
   transform: translateY(-2px);
 }/*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@ Author: Alex Fuller
 */
 
 //Global Variables
-$primaryBtnColor: #2d2f31;
+$primaryBtnColor: #3b82f6;
 $fontStack: Roboto, sans-serif;
 $headerBcgCol: #000;
 $headingFontCol: #212b36;
@@ -16,7 +16,8 @@ $fontCol: #fff;
 $navFontCol: #fcfcfc;
 $heroFontCol: #fff;
 $siteTitleCol: #fff;
-$primaryCol: #ac925a;
+$primaryCol: #3b82f6;
+$secondCol: #10b981;
 $priorityZIndex: 999;
 $secondaryZIndex: 75;
 $thirdZIndex: 50;
@@ -25,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: $fontStack;
-    background-color: #333;
+    background-color: #f3f4f6;
 }
 
 p {
@@ -137,6 +138,6 @@ button {
 }
 
 .buttons .hire-btn:hover {
-    background-color: rgba(172,146,90,0.8);
+    background-color: rgba(59,130,256,0.8);
     transform: translateY(-2px);
 }
