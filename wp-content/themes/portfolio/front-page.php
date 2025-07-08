@@ -6,7 +6,7 @@
 				}
 			}
 ?>
-<!--Content Here--->
+<!--Hero Here--->
 <section class="content">
     <div class="hero" style="background: url(<?php echo featured_img_url(); ?>) 
         no-repeat top center fixed rgba(0,0,0,0.3); background-size:cover; 
@@ -15,10 +15,15 @@
         <div class="hero-content">
             <h1 class="title"><?php the_title(); ?></h1>
             <p class="sub-title">WordPress Developer | Tech Admin | AI Enthusiast</p>
+            
+            <div class="buttons">
+                <button class="portfolio-btn">View my portfolio</button>
+                <button class="hire-btn">Hire me</button>
+            </div>
         </div>
-        
-
     </div>
+
+<!--Main Content Here-->
     <div class="container">
         <?php get_template_part('template-parts/fpsection', 'content'); ?>
     </div>

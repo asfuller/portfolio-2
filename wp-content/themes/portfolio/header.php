@@ -21,7 +21,7 @@
 	<?php //echo get_bloginfo('name'); ?> <!---Blog Name inside a class--->
     
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-0">
+        <nav class="navbar navbar-expand-lg mt-0">
             <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php echo get_bloginfo('name'); ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <?php wp_nav_menu( array( 
                     'theme_location' => 'main_menu',
-                    'menu_class' => 'navbar-nav mr-auto mt-2 mt-lg-0 main-menu',
+                    'menu_class' => 'navbar-nav mt-2 main-menu',
                     'container'      => false)); ?>  
             </div>
         </nav>
