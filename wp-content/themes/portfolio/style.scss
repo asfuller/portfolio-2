@@ -1,0 +1,80 @@
+/*
+Theme Name: Portfolio Theme
+Text Domain: Alex Fuller
+Version: 1.0
+Description: This is Alexandria Fuller's Portfolio
+Tags: portfolio-website, responsive
+Author: Alex Fuller
+*/
+
+//Global Variables
+$primaryBtnColor: #2d2f31;
+$fontStack: Roboto, sans-serif;
+$headerBcgCol: rgba(255,255,255,0.2);
+$headingFontCol: #212b36;
+$fontCol: #333;
+$heroFontCol: #fff;
+$siteTitleCol: #333;
+$primaryCol: #ac925a;
+$priorityZIndex: 999;
+$secondaryZIndex: 75;
+$thirdZIndex: 50;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontStack;
+    background-color: #333;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    padding: 0 10px;
+    height: 100px;
+    z-index: $priorityZIndex;
+    background-color: $heroFontCol;
+}
+
+.navbar-brand {
+    font-size: 35px;
+}
+
+.navbar .main-menu {
+    list-style-type: none;
+    margin-left: auto;
+    height: 100%;
+}
+
+.navbar .main-menu li a {
+    padding: 25rem 1rem;
+    text-decoration: none;
+    color: $fontCol;
+    font-size: 20px;
+}
+
+.navbar .main-menu li a:hover {
+    color: rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .main-menu li a:active {
+    color: $primaryCol;
+}
+
+//Content - FRONT PAGE
+.page-wrap {
+    padding: 2rem 0;
+}
+
+.hero {
+    height: 80vh;
+}
+
+.hero-content {
+    margin-top: 3em;
+    margin-left: 50px;
+}
