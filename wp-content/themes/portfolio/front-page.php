@@ -7,21 +7,28 @@
 			}
 ?>
 <!--Hero Here--->
-<section class="content">
-    <div class="hero" style="background: url(<?php echo featured_img_url(); ?>) 
-        no-repeat top center fixed rgba(0,0,0,0.3); background-size:cover; 
-        background-position: center !important; background-blend-mode: multiply !important;">
-        
-        <div class="hero-content">
-            <h1 class="title"><?php the_title(); ?></h1>
-            <p class="sub-title">WordPress Developer | Tech Admin | AI Enthusiast</p>
-            
-            <div class="buttons">
+<section class="py-5 bg-white hero">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Column: Text -->
+      <div class="col-lg-6 mb-4 mb-lg-0 hero-content">
+        <h1 class="display-5 fw-bold text-dark"><?php the_title(); ?></h1>
+        <p class="lead text-muted mb-4">WordPress Developer | Tech Admin | AI Enthusiast</p>
+        <div class="buttons">
                 <button class="portfolio-btn">View my portfolio</button>
                 <button class="hire-btn">Hire me</button>
             </div>
-        </div>
+      </div>
+      
+      <!-- Right Column: Image -->
+      <div class="col-lg-6 text-center">
+        <img src="<?php echo featured_img_url(); ?>" class="hero-img" alt="Lightbulb idea" srcset="">
+      </div>
+
     </div>
+  </div>
+</section>
 
 <!--Main Content Here-->
     <div class="container">

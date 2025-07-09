@@ -14,7 +14,7 @@ body {
 }
 
 p {
-  color: #fff;
+  color: #333;
   font-size: 20px;
 }
 
@@ -110,8 +110,8 @@ button {
 }
 
 .buttons .portfolio-btn:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #fff;
+  background-color: #3b82f6;
+  color: #333;
   transform: translateY(-2px);
 }
 
@@ -123,4 +123,31 @@ button {
 .buttons .hire-btn:hover {
   background-color: rgba(59, 130, 255, 0.8);
   transform: translateY(-2px);
+}
+
+.hero-img {
+  background: no-repeat top center fixed rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center !important;
+  background-blend-mode: multiply !important;
+  width: 50%;
+  margin-top: 5px;
+}
+
+.about-wrap {
+  margin-bottom: 10px;
+}
+
+@keyframes block-fade-in {
+  0% {
+    opacity: 0;
+    transform: translatey(400px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0px);
+  }
 }/*# sourceMappingURL=style.css.map */

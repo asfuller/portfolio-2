@@ -1,0 +1,43 @@
+button {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+button .btn-primary {
+    border: solid #3b82f6;
+    background-color: transparent;
+    color: #fff;
+}
+
+button .btn-primary:hover {
+    background-color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    color: #3b82f6;
+    background-color: transparent;
+    transform: translateY(-2px);
+}
+
+.service-box:hover {
+    transform: translateY(-2px);
+}
+
+.section-block {
+    animation: block-fade-in 0.8s ease-in forwards;
+}
