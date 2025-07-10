@@ -128,7 +128,7 @@ button {
 
 .buttons .portfolio-btn:hover {
     background-color: $primaryCol;
-    color: $fontCol;
+    color: $navFontCol;
     transform: translateY(-2px);
 }
 
@@ -152,8 +152,9 @@ button {
 }
 
 //About Page
-.about-wrap {
+.wrapper {
     margin-bottom: 10px;
+    min-height: 100%;
 }
 
 //KEYFRAMES
@@ -169,4 +170,24 @@ button {
       opacity: 1;
       transform: translatey(0px);
     }
+  }
+
+  footer {
+    height: 5em;
+    background-color: $headerBcgCol;
+    border-top: solid rgba(255,255,255,0.5);
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+  }
+
+  footer .footer-content {
+    display: block;
+    padding: 10 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-content p {
+    color: $navFontCol;
   }

@@ -24,7 +24,8 @@
         <nav class="navbar navbar-expand-lg mt-0">
             <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php echo get_bloginfo('name'); ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <!--<span class="navbar-toggler-icon"></span>-->
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">

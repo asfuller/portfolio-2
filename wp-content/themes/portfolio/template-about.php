@@ -4,7 +4,7 @@
  */
 	get_header();
 ?>
-		<section class="about-wrap">
+		<section class="wrapper">
 			<?php
 				if(have_posts()) {
 					while(have_posts()) {
