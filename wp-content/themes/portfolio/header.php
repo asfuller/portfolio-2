@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <?php wp_nav_menu( array( 
                     'theme_location' => 'main_menu',
-                    'menu_class' => 'navbar-nav mt-2 main-menu',
+                    'menu_class' => 'navbar-nav ms-auto main-menu',
                     'container'      => false)); ?>  
             </div>
         </nav>

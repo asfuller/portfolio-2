@@ -24,7 +24,7 @@ header {
 }
 
 .navbar {
-  padding: 0 10px;
+  padding: 20 10px;
   height: 100px;
   z-index: 999;
   background-color: #000;
@@ -50,15 +50,12 @@ header {
   text-decoration: none;
   color: #fcfcfc;
   font-size: 20px;
+  border: 3px solid red;
 }
 
 .navbar .main-menu li a:hover {
   color: rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease-in-out;
-}
-
-.navbar .main-menu li a:active {
-  color: #3b82f6;
 }
 
 .page-wrap {
@@ -71,14 +68,13 @@ header {
 }
 
 .hero .hero-content {
-  padding-top: 13em;
-  padding-left: 50px;
-  color: #fff;
+  padding-top: 5em;
 }
 
 .hero-content .title {
   font-size: 80px;
   font-weight: 700;
+  color: #212b36;
 }
 
 .hero-content .sub-title {
@@ -130,8 +126,9 @@ button {
   background-size: cover;
   background-position: center !important;
   background-blend-mode: multiply !important;
-  width: 50%;
-  margin-top: 5px;
+  width: 100%;
+  height: 30vh;
+  margin-top: auto;
 }
 
 .wrapper {
