@@ -1,0 +1,313 @@
+/*
+Theme Name: Noctiva
+Theme URI: https://effethemes.com/themes/noctiva-wordpress-theme/
+Author: Effe Themes
+Author URI: https://effethemes.com/
+Description: Noctiva is a dark, immersive WordPress Block Theme built for modern brands, studios and digital creators. With glowing visuals, refined typography and fluid layouts, it delivers clarity and atmosphere in equal measure. Built for Full Site Editing and responsive across all devices, Noctiva gives you the freedom to shape bold experiences with elegance and precision.
+Requires at least: 6.6
+Tested up to: 6.6
+Requires PHP: 5.7
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: noctiva
+Tags: blog, portfolio, block-styles, e-commerce, full-site-editing, two-columns, full-width-template, custom-logo, custom-menu, custom-background, editor-style, block-patterns, custom-header, translation-ready, template-editing
+*/
+
+/* ================= > General Styles < ================= */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--wp--preset--color--custom-background-primary);
+  color: var(--wp--preset--color--custom-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul > li > a {
+  text-decoration: none;
+}
+
+ul > li > a:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+:where(.wp-site-blocks) > * {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.is-style-outline > a {
+  background: transparent !important;
+}
+
+.wp-block-search.wp-block-search__button-only .wp-block-search__button {
+  display: block !important;
+}
+
+.full-width-image,
+.full-width-image > img {
+  width: 100% !important;
+}
+
+/* ================= > Typography < ================= */
+
+h1 {
+  font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw + 0.8rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.75rem, 2.5vw + 0.5rem, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 2vw + 0.4rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.25rem, 1.5vw + 0.3rem, 1.6rem);
+}
+
+h6 {
+  font-size: clamp(1.1rem, 1.2vw + 0.2rem, 1.3rem);
+}
+
+p {
+  font-size: clamp(1rem, 1vw + 0.3rem, 1.1rem);
+  font-family: var(--wp--preset--font-family--poppins);
+  line-height: 1.8;
+}
+
+button,
+.wp-block-button__link {
+  font-family: var(--wp--preset--font-family--montserrat);
+  font-size: clamp(1rem, 1vw + 0.3rem, 1.1rem);
+}
+
+figcaption {
+  font-family: var(--wp--preset--font-family--montserrat);
+}
+
+a {
+  color: var(--wp--preset--color--custom-text-color);
+  font-family: var(--wp--preset--font-family--montserrat);
+  transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+  color: var(--wp--preset--color--custom-primary);
+}
+
+/* ================= > Popup < ================= */
+
+.noctiva-fixed-message {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: var(--wp--preset--color--custom-primary) !important;
+  padding: 20px 20px;
+  z-index: 1000;
+  word-wrap: break-word;
+  max-height: 70% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noctiva-fixed-message a {
+  color: #fff;
+  writing-mode: vertical-rl;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  word-wrap: break-word;
+  max-height: 70% !important;
+}
+
+/* ================= > Header < ================= */
+
+.wp-block-site-title > a {
+  text-decoration: none;
+}
+
+.wp-block-site-title > a:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+.wp-block-navigation-item:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+.wp-block-navigation__responsive-container-content {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: start !important;
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+  border: 0 !important;
+}
+
+.wp-block-navigation-submenu > li {
+  background: var(--wp--preset--color--custom-background-secondary) !important;
+  color: var(--wp--preset--color--custom-text-color);
+}
+
+.header-search-icon > div > button {
+  background: transparent;
+  padding: 0;
+}
+
+.menu-fit {
+  width: fit-content;
+}
+
+/* ================= > Glow BG < ================= */
+
+.glow {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+background-image: 
+    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.06) 0%, transparent 30%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.015), transparent 90%);
+  background-repeat: no-repeat;
+  background-size: 1000px 700px, 700px 500px, 100% 100%;
+  background-position: top center, top right, center;
+  background-blend-mode: screen, screen, overlay;
+}
+
+.glow-right {
+background-image: 
+    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.06) 0%, transparent 30%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.015), transparent 90%);
+  background-repeat: no-repeat;
+  background-size: 1000px 1000px;
+  background-position: right top;
+  background-blend-mode: screen;
+}
+
+.glow-left {
+  background-image: 
+    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.06) 0%, transparent 30%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.015), transparent 90%);
+  background-repeat: no-repeat;
+  background-size: 1000px 1000px;
+  background-position: left top;
+  background-blend-mode: screen;
+}
+
+/* ================= > Blog < ================= */
+
+.wp-block-post-title > a:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+.wp-block-button__link,
+.wp-block-search__button {
+  background: var(--wp--preset--color--custom-primary);
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.wp-block-button__link:hover,
+.wp-block-search__button:hover {
+  opacity: 0.8;
+}
+
+input,
+textarea {
+  background: var(--wp--preset--color--custom-background-secondary);
+  color: #fff !important;
+}
+
+/* ================= > Footer < ================= */
+
+.copy > a {
+  text-decoration: none;
+}
+
+.copy > a:hover {
+  opacity: 0.8;
+}
+
+/* ================= > Media Queries < ================= */
+
+@media (max-width: 1024px) {
+  .wp-block-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero-cta-buttons {
+    justify-self: baseline;
+  }
+
+  .hero-content > div {
+    max-width: max-content !important;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) .wp-block-navigation__responsive-container-close,
+  .wp-block-navigation__responsive-container-open:not(.always-shown),
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none;
+  }
+
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .wp-block-navigation__container {
+    --navigation-layout-justification-setting: flex-start !important;
+    --navigation-layout-justify: flex-start !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .wp-block-buttons {
+    flex-direction: column;
+  }
+}

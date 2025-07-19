@@ -1,0 +1,191 @@
+/*
+Theme Name: Portfolio Theme
+Text Domain: Alex Fuller
+Version: 1.0
+Description: This is Alexandria Fuller's Portfolio
+Tags: portfolio-website, responsive
+Author: Alex Fuller
+*/
+
+//Global Variables
+$primaryBtnColor: #3b82f6;
+$fontStack: Roboto, sans-serif;
+$headerBcgCol: #000;
+$headingFontCol: #212b36;
+$fontCol: #333;
+$navFontCol: #fcfcfc;
+$heroFontCol: #fff;
+$siteTitleCol: #fff;
+$primaryCol: #3b82f6;
+$secondCol: #10b981;
+$priorityZIndex: 999;
+$secondaryZIndex: 75;
+$thirdZIndex: 50;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontStack;
+    background-color: #f3f4f6;
+}
+
+p {
+    color: $fontCol;
+    font-size: 20px;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    padding: 20 10px;
+    height: 100px;
+    z-index: $priorityZIndex;
+    background-color: $headerBcgCol;
+}
+
+.navbar-brand {
+    font-size: 35px;
+    color: $siteTitleCol;
+}
+
+.navbar-brand:hover {
+    color: $siteTitleCol;
+}
+
+.navbar .main-menu {
+    list-style-type: none;
+    margin-left: auto;
+    height: 100%;
+}
+
+.navbar .main-menu li a {
+    padding: 25rem 1rem;
+    text-decoration: none;
+    color: $navFontCol;
+    font-size: 20px;
+    border: 3px solid red
+}
+
+.navbar .main-menu li a:hover {
+    color: rgba(255,255,255,0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+//Content - FRONT PAGE
+.page-wrap {
+    padding: 2rem 0;
+}
+
+.hero {
+    height: 80vh;
+    position: relative;
+}
+
+.hero .hero-content {
+    padding-top: 5em;
+    //padding-left: 50px;
+}
+
+.hero-content .title {
+    font-size: 80px;
+    font-weight: 700;
+    color: $headingFontCol;
+}
+
+.hero-content .sub-title {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.content .container {
+    padding: 2rem 0;
+}
+
+button {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons .portfolio-btn {
+    background-color: $heroFontCol;
+    color: $primaryBtnColor;
+}
+
+.buttons .portfolio-btn:hover {
+    background-color: $primaryCol;
+    color: $navFontCol;
+    transform: translateY(-2px);
+}
+
+.buttons .hire-btn {
+    background-color: $primaryCol;
+    color: #fff;
+}
+
+.buttons .hire-btn:hover {
+    background-color: rgba(59,130,256,0.8);
+    transform: translateY(-2px);
+}
+
+.hero-img {
+    background: no-repeat top center fixed rgba(0,0,0,0.3); 
+    background-size:cover; 
+    background-position: center !important; 
+    background-blend-mode: multiply !important;
+    width: 100%;
+    height: 30vh;
+    margin-top: auto;
+}
+
+//About Page
+.wrapper {
+    margin-bottom: 10px;
+    min-height: 100%;
+}
+
+//KEYFRAMES
+@keyframes block-fade-in {
+    0% {
+      opacity: 0;
+      transform: translatey(400px);
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translatey(0px);
+    }
+  }
+
+  footer {
+    height: 5em;
+    background-color: $headerBcgCol;
+    border-top: solid rgba(255,255,255,0.5);
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+  }
+
+  footer .footer-content {
+    display: block;
+    padding: 10 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-content p {
+    color: $navFontCol;
+  }
